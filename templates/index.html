@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bezhta language tools">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bezhta Language Tools</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(199, 222, 237, 1) 0%, rgba(209, 240, 219, 1) 35%, rgba(232, 189, 240, 1) 100%);;
+        }
+
+        h1 {
+            color: #2a2a55;
+            font-weight: 600;
+        }
+
+        .tool-card {
+            border: none;
+            border-radius: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-title {
+            font-size: 22px;
+            color: #2a2a55;
+            font-weight: 500;
+        }
+
+        .tool-text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        a.tool-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card p-5 shadow-lg text-center" style="max-width: 800px; width: 100%;">
+        <h1 class="mb-3">Bezhta Language Tools</h1>
+        <p class="mb-4 text-muted">
+            Choose an instrument
+        </p>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <a href="/morph" class="tool-link">
+                    <div class="card tool-card p-4 h-100">
+                        <div class="tool-title mb-2">
+                            Morphological Analyzer
+                        </div>
+                        <div class="tool-text">
+                            Morphological parsing of Bezhta wordforms with grammatical
+                            analysis and segmentation.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="/translit" class="tool-link">
+                    <div class="card tool-card p-4 h-100">
+                        <div class="tool-title mb-2">
+                            Transliterator
+                        </div>
+                        <div class="tool-text">
+                            Conversion between Cyrillic Bezhta orthography
+                            and Latin transliteration or vice versa.
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
